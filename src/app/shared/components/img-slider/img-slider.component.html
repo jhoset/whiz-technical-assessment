@@ -1,0 +1,16 @@
+<div class="relative flex h-full w-full overflow-hidden animate-fade-in ">
+  @for (slide of slides; track slide.title) {
+    <div class="h-screen w-screen" [ngClass]="{'hidden':this.currentIndex !== $index }">
+      <img [alt]="slide.title"
+           [src]="slide.url"
+           class="none h-full w-full object-cover animate-custom-zoom "/>
+      <span  class="absolute text-2xl tracking-widest font-semibold left-1/2 top-1/2 animate-fade-in translate-x-[-50%] translate-y-[-50%]">
+      {{ slide.description }}
+    </span>
+    </div>
+
+
+
+  }
+
+</div>
