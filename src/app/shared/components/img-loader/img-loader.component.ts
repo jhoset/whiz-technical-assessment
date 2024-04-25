@@ -3,10 +3,9 @@ import {ISlice} from "../img-slider/types/slide.interface";
 
 @Component({
   selector: 'app-img-loader',
-  templateUrl: './img-loader.component.html',
-  styleUrls: ['./img-loader.component.scss'],
+  templateUrl: './img-loader.component.html'
 })
-export class ImgLoaderComponent  implements OnInit {
+export class ImgLoaderComponent {
 
   @Input() interval: number = 3000;
 
@@ -27,9 +26,4 @@ export class ImgLoaderComponent  implements OnInit {
       description: 'CUSCO #3'
     }
   ]
-
-  constructor() { }
-
-  ngOnInit() {}
-
 }
