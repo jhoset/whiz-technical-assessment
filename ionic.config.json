@@ -1,0 +1,7 @@
+{
+  "name": "img-carousel-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
